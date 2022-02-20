@@ -39,4 +39,8 @@ t_test_lots <- function(data, lots, mu) {
   }
 }
 
+# T test the population
+t.test(coil$PSI, mu=1500)
+
+# T tests on the individual lots
 t_test_lots(coil, lot_summary$Manufacturing_Lot, 1500)
